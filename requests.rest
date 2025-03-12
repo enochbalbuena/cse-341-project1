@@ -1,0 +1,32 @@
+### Get All Contacts
+GET https://project1-4vpa.onrender.com/contacts
+
+### Get a Single Contact
+GET https://project1-4vpa.onrender.com/contacts/67c9d54ed5918f18dd4421cd
+
+### Create a New Contact
+POST https://project1-4vpa.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Johnson",
+  "email": "alice@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1995-08-12"
+}
+
+### Update an Existing Contact
+PUT https://project1-4vpa.onrender.com/contacts/67c9d610d5918f18dd4421ce
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Johnson",
+  "email": "alice@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1995-08-12"
+}
+
+### Delete a Contact
+DELETE https://project1-4vpa.onrender.com/contacts/67c9d65dd5918f18dd4421cf
